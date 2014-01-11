@@ -2,7 +2,9 @@
 
 Use these configuration files with [Boxstarter](http://boxstarter.org/) and it's [web launcher technique](http://boxstarter.org/WebLauncher). 
 
-Simply open up Internet Explorer and hit "http://boxstarter.org/package/nr/url?" appended with the path to one of the above configuration files. This will kick of the download of an auto-generated installer that will go through and install the components from the configuration file one by one.
+Simply open up Internet Explorer and hit "http://boxstarter.org/package/nr/url?" appended with the path to one of the above configuration files (using the raw path). This will kick of the download of an auto-generated installer that will go through and install the components from the configuration file one by one. For example:
+
+        http://boxstarter.org/package/nr/url?https://github.com/habaneroconsulting/boxstarter-scripts/raw/master/dev.txt
 
 *dev.txt*: Simple environment script for installing browsers, Fiddler, Notepad++, NodeJS, and change some annoying windows configurations (i.e. disable UAC, enable remote desktop)
 
