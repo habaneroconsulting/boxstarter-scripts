@@ -1,0 +1,29 @@
+#-------------------------------------------------
+Update-ExecutionPolicy Unrestricted
+Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
+Enable-RemoteDesktop
+Disable-InternetExplorerESC
+Disable-UAC
+
+cinst fiddler4
+cinst notepadplusplus
+cinst nodejs
+cinst GoogleChrome
+cinst Firefox
+
+
+
+#SharePoint
+#-------------------------------------------------
+
+cinst SearchQueryTool
+
+
+
+#Visual Studio add ons
+#-------------------------------------------------
+
+cinst aspnetwebtools20122  #NOTE: This will launch the installer, which won't find the add-on. It's not available anymore via the installer so just search for "ASP.NET web tools" and install the latest
+
+#For VS 2012
+Install-ChocolateyVsixPackage WebEssentials2012 http://visualstudiogallery.msdn.microsoft.com/07d54d12-7133-4e15-becb-6f451ea3bea6/file/79465/38/WebEssentials2012.vsix
