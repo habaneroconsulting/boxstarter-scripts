@@ -6,12 +6,12 @@ Simply open up Internet Explorer and hit "http://boxstarter.org/package/nr/url?"
 
         http://boxstarter.org/package/nr/url?https://github.com/habaneroconsulting/boxstarter-scripts/raw/master/dev.txt
 
-*dev.txt*: Simple environment script for installing browsers, Fiddler, Notepad++, NodeJS, and change some annoying windows configurations (i.e. disable UAC, enable remote desktop)
+**dev.txt**: Simple environment script for installing browsers, Fiddler, Notepad++, NodeJS, and change some annoying windows configurations (i.e. disable UAC, enable remote desktop)
 
-*dev-sp.txt*: Same as above, but with additional SharePoint specific installations
+**dev-sp.txt**: Same as above, but with additional SharePoint specific installations
 
-*dev-sp-vs2012.txt*: Includes installations for environments with Visual Studio 2012 already installed. ASP.NET web tools and [Web Essentials 2012](http://visualstudiogallery.msdn.microsoft.com/07d54d12-7133-4e15-becb-6f451ea3bea6) extension.
+**dev-sp-vs2012.txt**: Includes installations for environments with Visual Studio 2012 already installed. ASP.NET web tools and [Web Essentials 2012](http://visualstudiogallery.msdn.microsoft.com/07d54d12-7133-4e15-becb-6f451ea3bea6) extension.
 
-*dev-sp-vs2013.txt*: For installations with Visual Studio 2013 installed.
+**dev-sp-vs2013.txt**: For installations with Visual Studio 2013 installed.
 
-*NOTE*: The Visual Studio installations both includes ASP.NET web tools. At the time of writing this the latest version (2013.1) isn't available through Chocolatey yet so the installer will open up and prompt that it can't find the package. You just need to search for ASP.NET web tools and install the latest version from this installer prompt.
+**NOTE**: The Visual Studio installations both includes ASP.NET web tools. At the time of writing this the latest version (2013.1) isn't available through Chocolatey yet so the installer will open up and prompt that it can't find the package. You just need to search for ASP.NET web tools and install the latest version from this installer prompt.
