@@ -1,18 +1,28 @@
-#-------------------------------------------------
-Update-ExecutionPolicy Unrestricted
-Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
-Enable-RemoteDesktop
+# -------------------------------------------------
+# Windows configuration changes
+# -------------------------------------------------
+
 Disable-InternetExplorerESC
 Disable-UAC
-
-cinst fiddler4
-cinst notepadplusplus
-cinst nodejs
-cinst GoogleChrome
-cinst Firefox
+Enable-RemoteDesktop
+Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
+Set-TaskbarOptions -Size Small -Lock -Dock Bottom
+Update-ExecutionPolicy Unrestricted
 
 
-#SharePoint
-#-------------------------------------------------
+# -------------------------------------------------
+# Program installs
+# -------------------------------------------------
 
-cinst SearchQueryTool
+choco install fiddler4
+choco install Firefox
+choco install GoogleChrome
+choco install nodejs.install
+choco install notepadplusplus.install
+
+
+# -------------------------------------------------
+# SharePoint
+# -------------------------------------------------
+
+choco install SearchQueryTool

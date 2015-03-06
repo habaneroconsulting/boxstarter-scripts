@@ -1,12 +1,20 @@
-#-------------------------------------------------
+# -------------------------------------------------
+# Windows configuration changes
+# -------------------------------------------------
+
 Update-ExecutionPolicy Unrestricted
 Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
 Enable-RemoteDesktop
 Disable-InternetExplorerESC
 Disable-UAC
 
-cinst fiddler4
-cinst notepadplusplus
-cinst nodejs
-cinst GoogleChrome
-cinst Firefox
+
+# -------------------------------------------------
+# Program installs
+# -------------------------------------------------
+
+choco install fiddler4
+choco install Firefox
+choco install GoogleChrome
+choco install nodejs.install
+choco install notepadplusplus.install

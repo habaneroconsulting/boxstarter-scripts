@@ -1,29 +1,39 @@
-#-------------------------------------------------
-Update-ExecutionPolicy Unrestricted
-Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
-Enable-RemoteDesktop
+# -------------------------------------------------
+# Windows configuration changes
+# -------------------------------------------------
+
 Disable-InternetExplorerESC
 Disable-UAC
-
-cinst fiddler4
-cinst notepadplusplus
-cinst nodejs
-cinst GoogleChrome
-cinst Firefox
+Enable-RemoteDesktop
+Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
+Set-TaskbarOptions -Size Small -Lock -Dock Bottom
+Update-ExecutionPolicy Unrestricted
 
 
+# -------------------------------------------------
+# Program installs
+# -------------------------------------------------
 
-#SharePoint
-#-------------------------------------------------
+choco install fiddler4
+choco install Firefox
+choco install GoogleChrome
+choco install nodejs.install
+choco install notepadplusplus.install
 
-cinst SearchQueryTool
+
+# -------------------------------------------------
+# SharePoint
+#--------------------------------------------------
+
+choco install SearchQueryTool
 
 
+# -------------------------------------------------
+# Visual Studio add ons
+# -------------------------------------------------
 
-#Visual Studio add ons
-#-------------------------------------------------
+choco install aspnetwebtools20122  # NOTE: This will launch the installer, which won't find the add-on.
+						   # It's not available anymore via the installer so just search for "ASP.NET web tools" and install the latest
 
-cinst aspnetwebtools20122  #NOTE: This will launch the installer, which won't find the add-on. It's not available anymore via the installer so just search for "ASP.NET web tools" and install the latest
-
-#For VS 2013
+# For VS 2013
 Install-ChocolateyVsixPackage WebEssentials2013 http://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361/file/105627/24/WebEssentials2013.vsix
