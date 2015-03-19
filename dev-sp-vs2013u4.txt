@@ -14,22 +14,22 @@ Update-ExecutionPolicy Unrestricted
 # Program installs
 # -------------------------------------------------
 
-choco install fiddler4
-choco install Firefox
-choco install GoogleChrome
-choco install nodejs.install
-choco install notepadplusplus.install
-choco install sublimetext3
-choco install sublimetext3.packagecontrol
+choco install fiddler4 -y
+choco install Firefox -y
+choco install GoogleChrome -y
+choco install nodejs.install -y
+choco install notepadplusplus.install -y
+choco install sublimetext3 -y
+choco install sublimetext3.packagecontrol -y
 
 
 # -------------------------------------------------
 # SharePoint program installs
 #--------------------------------------------------
 
-choco install SearchQueryTool
-choco install sharepointdesigner2013x64
-choco install sharepointmanager2013
+choco install SearchQueryTool -y
+choco install sharepointdesigner2013x64 -y
+choco install sharepointmanager2013 -y
 
 
 # -------------------------------------------------
