@@ -28,7 +28,6 @@ choco install sublimetext3.packagecontrol -y
 #--------------------------------------------------
 
 choco install SearchQueryTool -y
-choco install sharepointdesigner2013x64 -y
 choco install sharepointmanager2013 -y
 
 
