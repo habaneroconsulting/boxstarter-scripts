@@ -37,3 +37,8 @@ Simply open up Internet Explorer and hit "http://boxstarter.org/package/nr/url?"
 **dev-sp-vs2013u4.txt**: For installations with Visual Studio 2013 Update 4 installed.
 
 	http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/habaneroconsulting/boxstarter-scripts/master/dev-sp-vs2013u4.txt
+
+
+**build-sp.txt**: For SharePoint build servers.
+
+	http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/habaneroconsulting/boxstarter-scripts/master/build-sp.txt
