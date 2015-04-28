@@ -22,6 +22,14 @@ choco install notepadplusplus.install
 
 
 # -------------------------------------------------
+# TFS Git integration
+# -------------------------------------------------
+
+choco install git -y
+choco install dogtail.visualstudiotoolsforgit -y
+
+
+# -------------------------------------------------
 # SharePoint
 #--------------------------------------------------
 

@@ -24,6 +24,14 @@ choco install sublimetext3.packagecontrol -y
 
 
 # -------------------------------------------------
+# TFS Git integration
+# -------------------------------------------------
+
+choco install git -y
+choco install dogtail.visualstudiotoolsforgit -y
+
+
+# -------------------------------------------------
 # SharePoint program installs
 #--------------------------------------------------
 
