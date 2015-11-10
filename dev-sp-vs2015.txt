@@ -1,0 +1,57 @@
+# -------------------------------------------------
+# Windows configuration changes
+# -------------------------------------------------
+
+Disable-InternetExplorerESC
+Disable-UAC
+Enable-RemoteDesktop
+Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
+Set-TaskbarOptions -Size Small -Lock -Dock Bottom
+Update-ExecutionPolicy Unrestricted
+
+
+# -------------------------------------------------
+# Program installs
+# -------------------------------------------------
+
+choco install fiddler4 -y
+choco install Firefox -y
+choco install GoogleChrome -y
+choco install nodejs.install -y
+choco install notepadplusplus.install -y
+choco install sublimetext3 -y
+choco install sublimetext3.packagecontrol -y
+
+
+# -------------------------------------------------
+# TFS Git integration
+# -------------------------------------------------
+
+choco install git -y
+choco install dogtail.visualstudiotoolsforgit -y
+
+
+# -------------------------------------------------
+# SharePoint program installs
+#--------------------------------------------------
+
+choco install SearchQueryTool -y
+choco install sharepointmanager2013 -y
+
+
+# -------------------------------------------------
+# NPM installs
+# -------------------------------------------------
+
+npm install -g grunt-cli
+
+
+# -------------------------------------------------
+# Visual Studio extensions
+# -------------------------------------------------
+
+Install-ChocolateyVsixPackage IndentGuides https://visualstudiogallery.msdn.microsoft.com/e792686d-542b-474a-8c55-630980e72c30/file/48932/20/IndentGuide%20v14.vsix
+Install-ChocolateyVsixPackage TrailingWhitespaceVisualizer https://visualstudiogallery.msdn.microsoft.com/a204e29b-1778-4dae-affd-209bea658a59/file/135653/13/TrailingWhitespace.vsix
+Install-ChocolateyVsixPackage WebEssentials2015 https://visualstudiogallery.msdn.microsoft.com/ee6e6d8c-c837-41fb-886a-6b50ae2d06a2/file/146119/32/Web%20Essentials%202015%20v0.5.197.vsix
+Install-ChocolateyVsixPackage AddNewFile https://visualstudiogallery.msdn.microsoft.com/3f820e99-6c0d-41db-aa74-a18d9623b1f3/file/140782/17/Add%20New%20File%20v2.1.39.vsix
+Install-ChocolateyVsixPackage OpenCommandLine https://visualstudiogallery.msdn.microsoft.com/4e84e2cf-2d6b-472a-b1e2-b84932511379/file/151803/12/Open%20Command%20Line%20v1.7.121.vsix
