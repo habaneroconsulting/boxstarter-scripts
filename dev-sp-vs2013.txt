@@ -17,7 +17,7 @@ Update-ExecutionPolicy Unrestricted
 choco install fiddler4
 choco install Firefox
 choco install GoogleChrome
-choco install nodejs.install
+choco install nodejs.install --version 5.1.0
 choco install notepadplusplus.install
 
 

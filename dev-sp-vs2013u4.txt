@@ -17,7 +17,7 @@ Update-ExecutionPolicy Unrestricted
 choco install fiddler4 -y
 choco install Firefox -y
 choco install GoogleChrome -y
-choco install nodejs.install -y
+choco install nodejs.install -y --version 5.1.0
 choco install notepadplusplus.install -y
 choco install sublimetext3 -y
 choco install sublimetext3.packagecontrol -y
