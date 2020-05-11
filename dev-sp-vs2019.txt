@@ -1,0 +1,55 @@
+# -------------------------------------------------
+# Windows configuration changes
+# -------------------------------------------------
+
+Disable-InternetExplorerESC
+Disable-UAC
+Enable-RemoteDesktop
+Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
+Update-ExecutionPolicy Unrestricted
+
+
+# -------------------------------------------------
+# Program installs
+# -------------------------------------------------
+
+choco install fiddler -y
+choco install Firefox -y
+choco install GoogleChrome -y
+choco install nodejs.install -y --version 10.20.1
+choco install sublimetext3 -y
+choco install sublimetext3.packagecontrol -y
+choco install vscode -y
+choco install visualstudio2019enterprise -y
+
+# -------------------------------------------------
+# TFS Git integration
+# -------------------------------------------------
+
+choco install git -y
+
+
+# -------------------------------------------------
+# SharePoint program installs
+#--------------------------------------------------
+
+choco install SearchQueryTool -y
+
+
+# -------------------------------------------------
+# NPM installs
+# -------------------------------------------------
+
+npm install -g gulp
+
+
+# -------------------------------------------------
+# Visual Studio extensions
+# -------------------------------------------------
+
+Install-ChocolateyVsixPackage IndentGuides https://stevedowermsft.gallerycdn.vsassets.io/extensions/stevedowermsft/indentguides/16.0.0.0/1574469364573/IndentGuide_v16.vsix
+Install-ChocolateyVsixPackage TrailingWhitespaceVisualizer https://madskristensen.gallerycdn.vsassets.io/extensions/madskristensen/trailingwhitespacevisualizer/2.5.95/1577726179211/Trailing_Whitespace_Visualizer_v2.5.95.vsix
+Install-ChocolateyVsixPackage AddNewFile https://madskristensen.gallerycdn.vsassets.io/extensions/madskristensen/addnewfile/3.5.138/1577726122002/Add_New_File_v3.5.138.vsix
+Install-ChocolateyVsixPackage EditorConfig https://madskristensen.gallerycdn.vsassets.io/extensions/madskristensen/editorconfig/1.17.284/1580747807195/EditorConfig_Language_Service_v1.17.284.vsix
+Install-ChocolateyVsixPackage SyntacticLineCompression https://visualstudioplatformteam.gallerycdn.vsassets.io/extensions/visualstudioplatformteam/syntacticlinecompression/15.0.7/1543238149040/SyntacticLineCompression.vsix
+Install-ChocolateyVsixPackage FixMixedTabs https://visualstudioplatformteam.gallerycdn.vsassets.io/extensions/visualstudioplatformteam/fixmixedtabs/15.0.6/1553638217769/FixMixedTabs.vsix
